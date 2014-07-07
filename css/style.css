@@ -21,7 +21,8 @@ body{background:#f0f2f5;color:#888d94;font-family:'Microsoft Yahei';font-size:12
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 
-.title{font-size:18px;}
+.title{font-size:18px;line-height:40px;}
+.post-list{padding:2em;}
 .post-list li{line-height:24px;vertical-align:middle;}
 .post-list a{color:#a4a9ae}
 .post-date{font-size:16px;font-weight:bold;line-height:30px;}
