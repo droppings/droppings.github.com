@@ -15,9 +15,12 @@ table {	border-collapse: collapse;border-spacing: 0;}
 
 
 /* ------------- common -------------- */
-body{background:#f0f2f5;color:#888d94}
+body{background:#f0f2f5;color:#888d94;font-family:'Microsoft Yahei';}
+.wrapper{max-width:600px;margin:0 auto;}
 .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
 .clearfix { display: inline-table; }
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+
+.post-list li{line-height:30px;vertical-align:middle;}
 
