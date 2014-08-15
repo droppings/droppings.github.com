@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>css3 导航</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="css3, 动画, 导航">
+	<meta name="description" content="css3画一个丝带状导航">
+	<style type="text/css">
+		html, body, div, span, a, ul, li, i{margin:0;padding:0;font-size:1em;vertical-align: baseline;}
+		ul{list-style: none;}
+		.wrapper{text-align:center;}
+		.nav{display:inline-block;overflow:hidden;padding-top:2em;*display:inline;*zoom:1;}
+		.nav li{float:left;background:#f1f1f1;display:inline;}
+		.nav a{color:#666;line-height:1em;display:inline-block;text-decoration:none;padding:.5em;position:relative;*display:inline;*zoom:1;}
+		.nav a:hover{color:#fff;text-decoration:none;background:#ffd204;margin-top:-.5em;transition:background,margin .2s;-webkit-transition:background,margin .2s;-moz-transition:background,margin .2s;-o-transition:background,margin .2s;-ms-transition:background,margin .2s;}
+		.nav:before,.nav:after{content:'';display:block;border:solid 1em #f1f1f1;float:left;}
+		.nav:before{border-left-color:transparent;}
+		.nav:after{border-right-color:transparent;}
+		.nav a:before,.nav a:after{content:'';display:block;position:absolute;border-top:solid .5em #9B8651;top:100%;}
+		.nav a:after{border-right:solid .5em #f1f1f1;right:0;}
+		.nav a:before{border-left:solid .5em #f1f1f1;left:0;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="nav">
+			<li>
+				<a href="#">首页</a>
+			</li><li>
+				<a href="#">Blog</a>
+			</li><li>
+				<a href="#">其他內容</a>
+			</li><li>
+				<a href="#">首页</a>
+			</li><li>
+				<a href="#">首页</a>
+			</li>
+		</ul>
+
+	</div>
+</body>
+</html>
