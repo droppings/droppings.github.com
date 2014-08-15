@@ -28,3 +28,10 @@ body{background:#f0f2f5;color:#888d94;font-family:'Microsoft Yahei';font-size:12
 .post-date{font-size:16px;font-weight:bold;line-height:30px;}
 .post-title{padding-left:2em;}
 
+/* --------------- post --------------- */
+.post-page .doc{max-width:900px;margin:0 auto;background:#fff;}
+.post-page p{font-size:14px;line-height:24px;}
+.post-page h1{color:#3084c0;font-size:18px;line-height:50px;vertical-align:middle;}
+.post-page a{color:#5e605f;text-decoration:none;}
+.post-page a:hover{color:#3084c0;}
+
