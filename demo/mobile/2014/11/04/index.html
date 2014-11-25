@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>郭敏芝_广州</title>
+    <meta name="keywords" content="关键词" />
+    <meta name="description" content="最简洁的自我描述或感言" />
+    <meta name="author" content="guominzhi_gz none" />
+    <meta content="telephone=no" name="format-detection"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <div class="g-doc">
+    	<div class='m-swipe' id='slider'>
+    		<div class='swipe-wrap'>
+    			<div class="swipe-item swipe-item1">
+                    <div class="swipe-item-con">
+                        <p class="me"><img alt="me" src="img/me_001.jpg" class="animate2-hide"/></p>
+                        <p class="des">监测到目前的设备是<span id="device"></span>。</p>
+                    </div>
+                </div>
+    			<div class="swipe-item swipe-item2">
+                    <div class="swipe-item-con m-plst" >
+                        <a href="javascript:void(0)" class="animate1-hide" data-step="1"><img alt="PP" src="img/pp_002.jpg" /></a>
+                        <a href="javascript:void(0)" class="animate1-hide" data-step="4"><img alt="PP" src="img/pp_004.jpg" /></a>
+                        <a href="javascript:void(0)" class="animate1-hide" data-step="3"><img alt="PP" src="img/pp_005.jpg" /></a>
+                        <a href="javascript:void(0)" class="animate1-hide" data-step="0"><img alt="PP" src="img/pp_001.jpg" /></a>
+                        <a href="javascript:void(0)" class="animate1-hide" data-step="2"><img alt="PP" src="img/pp_003.jpg" /></a>
+                        <a href="javascript:void(0)" class="animate1-hide" data-step="5"><img alt="PP" src="img/pp_006.jpg" /></a>
+                    </div>         
+                </div>
+    			<div class="swipe-item swipe-item3">
+                    <div class="container-3d">
+                        <div class="swipe-item-con">
+                            <p class="des"> ------ 朋友眼中的我 ------ </p>
+                            <canvas id="myCanvas" class="wall">
+                                sad，你的浏览器不支持canvas噢。
+                            </canvas>
+                        </div> 
+                    </div>
+                </div>
+                <div class="swipe-item swipe-item4">
+                    <div class="swipe-item-con">
+                        <h2>CONTACT</h2>
+                        <img width="150" height="150" alt="头像" src="img/me_004.jpg" />
+                        <p><span>email：</span>guominzhi@pconline.com.cn</p>
+                        <p><span>phone：</span>15876534072</p>
+                        <p><span>weixin：</span>Dropping-</p>
+                    </div>
+                </div>
+    		</div>
+    		<div class="swipe-nav m-flex">
+    			 <span data-index="1">*￣(エ)￣</span>
+                 <span data-index="2">(oo)</span>
+                 <span data-index="3">= ω =</span>
+                 <span data-index="4">O__O"</span> 
+    		</div>
+    	</div>
+    </div>
+    <div class="m-mask" id="mask">
+        <img src="http://dummyimage.com/150x150/f1f1f1/999" alt="" id="cur_img">
+    </div>
+    <script type="text/javascript" src="http://js.3conline.com/wap/common/swipe.extend-min.js"></script>
+    <script type="text/javascript">
+
+        //为了那个工具栏..
+        document.querySelector(".g-doc").style.height = window.innerHeight +"px";
+       
+
+        var slider = document.getElementById('slider');
+        showBefore(document.querySelectorAll(".swipe-item2 .animate1-hide"),.5);
+    	window.mySwipe = swipe(slider, {
+    	    speed: 400,
+            startSlide:0,
+    	    //auto: 3000,
+    	    nav: document.querySelector("#slider .swipe-nav"),
+    	    vertical: true,
+            callback: function(index, elem){
+                var elem_con;
+                switch (index){
+                    case "0": 
+                        showBySteps(elem.querySelectorAll(".animate2-hide"),"animate2-show");
+                        break;
+                    case "1": 
+                        showBySteps(elem.querySelectorAll(".animate1-hide"),"animate1-show");
+                        break;
+                    case "2": 
+                        elem_con = elem.querySelector(".swipe-item-con");
+                        elem_con.style.width = slider.offsetWidth + "px";
+                        elem_con.style.height = slider.offsetHeight + "px";
+                        addClass(elem_con, "swipe-item3-animation");
+                        drawKeyWords(); 
+                        break;
+                    case "3": 
+                        break;
+                }
+            }
+    	});
+
+        function checkDevice(){
+            var ua = navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                return "微信";
+            }else if (ua.indexOf('ipad') != -1) {
+                return "iPad";
+            }else if (ua.indexOf('iphone') != -1) {
+                return "iphone";
+            }else if (ua.indexOf('android') != -1) {
+                return "android";
+            }else if(ua.indexOf("windows phone") != -1){
+                return "windows phone";
+            }else{
+                return "other";
+            }
+        }
+        document.getElementById("device").innerHTML = checkDevice();
+
+        //放大图片 
+        var plst = document.querySelectorAll(".m-plst a"),
+            mask = document.getElementById("mask");
+        for(var i = plst.length;i--;){
+            plst[i].addEventListener("click", function(){
+                document.getElementById("cur_img").src = this.getElementsByTagName("img")[0].src;
+                mask.style.display = "block";
+                mask.style.lineHeight = mask.offsetHeight + "px";
+                mask.addEventListener("click", function(){
+                    this.style.display = "none";
+                }, false);
+            }, false);
+        }
+
+        function addClass(obj, cls) {
+            if (!this.hasClass(obj, cls)){
+               obj.className += " " + cls; 
+            } 
+        }
+
+        function hasClass(obj, cls){
+            var obj_class = obj.className,
+                obj_class_lst = obj_class.split(/\s+/),
+                x = 0;
+            for(x in obj_class_lst) {
+                if(obj_class_lst[x] == cls) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function showBefore(arr, sec) {
+            var step;
+            for(var i = arr.length; i--; ){
+                step = arr[i].getAttribute("data-step") * sec;
+                arr[i].style.cssText = "-webkit-transition:all "+sec+"s ease-in "+step+"s; -moz-transition:all "+sec+"s ease-in "+step+"s; -ms-transition:all "+sec+"s ease-in "+step+"s; -o-transition:all "+sec+"s ease-in "+step+"s; transition:all "+sec+"s ease-in "+step+"s;";
+            }
+        }
+
+        function showBySteps(arr, cls_name) {
+            for(var i = arr.length; i--; ){
+                addClass(arr[i],cls_name);
+            }
+        }
+
+        //画标签词
+        function drawKeyWords(){
+            var canvas = document.getElementById('myCanvas'),
+                ctx,
+                font_colors = ["#fe748d","#b8dbf7","#a8d63f","#f9e3e5","#efa96e","#d9cda3","#9ac3f7"],
+                keywords = ["傻","D低","对面床的小屁孩","前方高能..","性别不明","矮肥","大喊包","蠢","可耐","SHI","骑宠小龟","路痴","小学生","逗比","小粒","记得冲冲水~","大胃王","SB","智商为0","猥琐","神经病","啊哈哈哈"],
+                max_w = slider.offsetWidth,
+                max_h = slider.offsetHeight,
+                color_len = font_colors.length,
+                k;
+            canvas.height = max_h;
+            if (canvas.getContext) {
+                ctx = canvas.getContext('2d');
+            }
+            for(var i = keywords.length;i--;){
+                (function(j){
+                    setTimeout(function(){
+                        ctx.font =  Math.floor(Math.random()*12) + 12 + "px Microsoft Yahei"; // 字体大小随机
+                        ctx.fillStyle = font_colors[Math.floor(Math.random()*color_len)]; //颜色随机
+                        ctx.fillText(keywords[j],Math.floor(Math.random()*(max_w*0.7))+20,Math.floor(Math.random()*(max_h*0.75))+20);//坐标也随机
+                    },300*i+1000);
+                })(i);
+            }
+        }
+
+
+    </script>
+    <script type="text/javascript">
+
+        /*分享到微信*/
+        var dataForWeixin = {
+            appId: "",
+            imgUrl: "http://www1.pcbaby.com.cn/test/guominzhi/141111/img/me_002.jpg",
+            url: window.location.href,
+            title: document.title,
+            desc: "最近剪了个新发型，就这样。~",
+            fakeid: "",
+            callback:function () {
+                // body...
+            }
+        };
+        var onBridgeReady = function() {
+            WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "appid": dataForWeixin.appId,
+                    "img_url": dataForWeixin.imgUrl,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url,
+                    "desc": dataForWeixin.desc,
+                    "title": dataForWeixin.title
+                }, function(res) {
+                    (dataForWeixin.callback)();
+                });
+            });
+            WeixinJSBridge.on('menu:share:timeline', function(argv) {
+                (dataForWeixin.callback)();
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "img_url": dataForWeixin.imgUrl,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url,
+                    "desc": dataForWeixin.desc,
+                    "title": dataForWeixin.title
+                }, function(res) {});
+            });
+            WeixinJSBridge.on('menu:share:weibo', function(argv) {
+                WeixinJSBridge.invoke('shareWeibo', {
+                    "content": dataForWeixin.title,
+                    "url": dataForWeixin.url
+                }, function(res) {
+                    (dataForWeixin.callback)();
+                });
+            });
+        };
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+            }
+        } else {
+            onBridgeReady();
+        }
+    </script>
+</body>
+</html>
