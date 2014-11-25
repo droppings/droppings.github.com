@@ -1,15 +1,52 @@
 ---
-layout: default
+layout: index
 title: Dropping's Blog
 ---
-<div class="wrapper">
-	<h1 class="title">{{ page.title }}</h1>
-　　<ul class="post-list">
-　　　　{% for post in site.posts %}
-　　　　　　<li>
-					<h2 class="post-date">{{ post.date | date_to_string }}</h2>
-					<p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+<div class="col-a">
+	<ul class="arts">
+		{% for post in site.posts %}
+			<li>
+				<h2>{{ post.title }}</h2>
+				<p class="time">{{ post.date | date_to_string }}</p>
+				<div class="pt-item">
+					<a href="{{ post.url }}">
+						<img width="200" height="300" alt="" src="http://dummyimage.com/200x300/f1f1f1/999" />
+					</a>
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容...</p>
+					<a href="{{ post.url }}" class="read-more">READ MORE</a>
+				</div>
 			</li>
-　　　　{% endfor %}
-　　</ul>
+		{% endfor %}
+	</ul>
+</div>
+<div class="col-b">
+	<div class="box-1">
+		<h3 class="box-1-th">其他内容盒子</h3>
+		<div class="box-1-bd">待定</div>
+	</div>
+	<div class="box-1">
+		<h3 class="box-1-th">Recent Posts</h3>
+		<div class="box-1-bd">
+			<ul class="pt-list">
+				<li>
+					<a href="#">
+						<img width="100" height="150" alt="" src="http://dummyimage.com/100x150/f1f1f1/999" />
+					</a>
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容...</p>
+				</li>
+				<li>
+					<a href="#">
+						<img width="100" height="150" alt="" src="http://dummyimage.com/100x150/f1f1f1/999" />
+					</a>
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容...</p>
+				</li>
+				<li>
+					<a href="#">
+						<img width="100" height="150" alt="" src="http://dummyimage.com/100x150/f1f1f1/999" />
+					</a>
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容...</p>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
