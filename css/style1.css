@@ -23,7 +23,9 @@ a:hover { color: #adc8a7; }
 
 .clearfix { zoom: 1; }
 
-.header, .footer { border: dashed 1px #737373; text-align: center; }
+.wrapper { max-width: 960px; padding: 20px; margin: 0 auto; _width: expression(document.documentElement.clientWidth>960?"960px":"auto"); overflow: hidden; }
+
+.header, .footer { text-align: center; }
 
 .header { border-width: 0 0 1px 0; }
 
@@ -41,8 +43,6 @@ h1 { font: 70px/116px "Microsoft Yahei","Sacramento"; font-weight: bold; height:
 .nav li { display: inline-block; line-height: 28px; vertical-align: middle; font-size: 14px; width: 33.33%; text-align: center; *display: inline; *zoom: 1; }
 .nav a { color: #2c2c2b; }
 .nav a:hover, .nav .current { color: #adc8a7; }
-
-.dashed-line { width: 958px; margin: 0 auto; border: dashed 1px #737373; border-top: 0; border-bottom: 0; padding: 20px; }
 
 .pt-item, .pt-list li { zoom: 1; }
 .pt-item:after, .pt-list li:after { content: "\20"; clear: both; height: 0; display: block; overflow: hidden; }
