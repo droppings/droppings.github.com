@@ -7,31 +7,11 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="header">
-			<h1>
-				Dropping's Blog
-				<span class="sub-des">RECORD & SHARE BLOG</span>
-			</h1>
-			<ul class="nav">
-				<li>
-					<a href="#" class="current">LIFE</a>
-				</li>
-				<li>
-					<a href="#">NOTE</a>
-				</li>
-				<li>
-					<a href="#">ABOUT</a>
-				</li>
-			</ul>
-		</div>
+		{% include header.html %}
 		<div class="content clearfix">
 			{{ content }}
 		</div>
-		<div class="footer">
-			<p>
-				<small>&copy;2014 by Dropping</small>
-			</p>
-		</div>
+		{% include footer.html %}
 	</div>
 </body>
 </html>
