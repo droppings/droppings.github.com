@@ -1,0 +1,73 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/*HTML5 display-role reset forolder browsers*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+body { background: #fff; color: #2c2c2b; font-family: "Microsoft Yahei"; font-size: 12px; }
+
+a { text-decoration: none; color: #2c2c2b; }
+
+a:hover { color: #adc8a7; }
+
+.clearfix:after { content: "\20"; clear: both; height: 0; display: block; overflow: hidden; }
+
+.clearfix { zoom: 1; }
+
+.wrapper { max-width: 960px; padding: 20px; margin: 0 auto; _width: expression(document.documentElement.clientWidth>960?"960px":"auto"); overflow: hidden; }
+
+.header, .footer { text-align: center; }
+
+.header { border-width: 0 0 1px 0; }
+
+.footer { border-width: 1px 0 0 0; }
+
+h1 { font: 70px/116px "Microsoft Yahei","Sacramento"; font-weight: bold; height: 156px; text-indent: -9999px; background: url(../img/title.jpg) center no-repeat; padding-top: 40px; }
+
+.col-a, .col-b { float: left; display: inline; }
+
+.col-a { width: 70%; }
+
+.col-b { width: 30%; }
+
+.nav { border-top: solid 1px #2c2c2b; border-bottom: solid 1px #2c2c2b; font-size: 0; width: 80%; margin: 35px auto; }
+.nav li { display: inline-block; line-height: 28px; vertical-align: middle; font-size: 14px; width: 33.33%; text-align: center; *display: inline; *zoom: 1; }
+.nav a { color: #2c2c2b; }
+.nav a:hover, .nav .current { color: #adc8a7; }
+
+.pt-item, .pt-list li { zoom: 1; }
+.pt-item:after, .pt-list li:after { content: "\20"; clear: both; height: 0; display: block; overflow: hidden; }
+.pt-item img, .pt-list li img { float: left; }
+.pt-item p, .pt-list li p { overflow: hidden; line-height: 24px; }
+
+.box-1 { padding: 28px; padding-top: 0; }
+
+.box-1-th { line-height: 28px; vertical-align: middle; color: #aca4a4; font-size: 14px; border-bottom: solid 1px #2c2c2b; }
+
+.box-1-bd { padding: 10px; }
+
+.box-2 { padding: 10px 20px; padding-top: 0; }
+
+.box-2-th { line-height: 28px; vertical-align: middle; color: #c0c0be; font-size: 14px; }
+
+.box-2-bd { padding: 20px 10px; border-bottom: solid 1px #c0c0be; }
+
+.content { padding-top: 40px; }
+
+.art-box { border: solid 1px #000; padding: 15px; }
+.art-box h2 { font-size: 40px; line-height: 60px; font-weight: normal; color: #666; }
+.art-box img { vertical-align: middle; }
+.art-box p { margin: 10px 0; font-size: 14px; line-height: 24px; text-indent: 2em; }
+.art-box .art-img { width: 100%; text-align: center; text-indent: 0; }
+.art-box .art-time { font-size: 12px; color: #c0c0be; text-indent: 0; padding: 5px 0; }
+
+/*# sourceMappingURL=art.css.map */
