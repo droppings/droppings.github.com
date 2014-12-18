@@ -39,6 +39,8 @@ h1 { font: 70px/116px "Microsoft Yahei","Sacramento"; font-weight: bold; height:
 
 .col-b { width: 30%; }
 
+.comments { padding: 20px 0; }
+
 .nav { border-top: solid 1px #2c2c2b; border-bottom: solid 1px #2c2c2b; font-size: 0; width: 80%; margin: 35px auto; }
 .nav li { display: inline-block; line-height: 28px; vertical-align: middle; font-size: 14px; width: 33.33%; text-align: center; *display: inline; *zoom: 1; }
 .nav a { color: #2c2c2b; }
@@ -54,6 +56,12 @@ h1 { font: 70px/116px "Microsoft Yahei","Sacramento"; font-weight: bold; height:
 .box-1-th { line-height: 28px; vertical-align: middle; color: #aca4a4; font-size: 14px; border-bottom: solid 1px #2c2c2b; }
 
 .box-1-bd { padding: 10px; }
+
+.box-2 { padding: 10px 20px; padding-top: 0; }
+
+.box-2-th { line-height: 28px; vertical-align: middle; color: #c0c0be; font-size: 14px; }
+
+.box-2-bd { padding: 20px 10px; border-bottom: solid 1px #c0c0be; }
 
 .arts li { border: solid 1px #2c2c2b; padding: 20px; margin-bottom: 28px; position: relative; zoom: 1; }
 .arts li .read-more { line-height: 20px; padding: 5px 30px; border: solid 1px #2c2c2b; position: absolute; bottom: 20px; right: 20px; }
