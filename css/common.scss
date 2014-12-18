@@ -16,8 +16,7 @@ a:hover{color:$a_hover;}
 
 .wrapper{max-width:960px;padding:20px;margin:0 auto;_width:expression(document.documentElement.clientWidth>960?"960px":"auto");overflow:hidden;}
 .header, .footer{text-align:center;}
-.header{border-width:0 0 1px 0;}
-.footer{border-width:1px 0 0 0;}
+.footer{padding:20px 0;}
 h1{font:70px/116px "Microsoft Yahei","Sacramento";font-weight:bold;height:156px;text-indent:-9999px;background:url(../img/title.jpg) center no-repeat;padding-top:40px;}
 .col-a, .col-b{float:left;display:inline;}
 .col-a{width:70%;}
