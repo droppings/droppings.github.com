@@ -1,0 +1,30 @@
+@import "reset";
+@import "common";
+
+.arts{
+	li{
+		border:solid 1px nth($fontColor, 1); 
+		padding:20px;
+		margin-bottom: 28px;
+		position: relative;
+		zoom: 1;
+		.read-more{
+			line-height: 20px;
+			padding:5px 30px;
+			border:solid 1px nth($fontColor, 1); 
+			position: absolute;
+			bottom:20px;
+			right: 20px;
+		}
+	}
+	h2{
+		font-size:22px;
+		line-height: 32px;
+		font-weight: normal;
+	}
+	.time{padding:10px 0;}
+	img{margin-right: 20px;}
+}
+
+.pt-list li{padding:5px;}
+.pt-list img{margin-right: 5px;}

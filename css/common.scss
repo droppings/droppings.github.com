@@ -1,0 +1,109 @@
+//----------------common---------------
+
+
+//全局变量
+//-------------------------------
+$fontSize: 12px;
+$fontColor: #2c2c2b #aca4a4 #c0c0be;
+$a_hover: #adc8a7;
+$dash_line_style: dashed 1px #737373;
+
+body{background:#fff;color: nth($fontColor, 1);font-family:"Microsoft Yahei";font-size: $fontSize;}
+a{text-decoration:none;color: nth($fontColor, 1);}
+a:hover{color:$a_hover;}
+.clearfix:after{content:"\20";clear:both;height:0;display:block;overflow:hidden;}
+.clearfix{zoom:1}
+
+.wrapper{max-width:960px;padding:20px;margin:0 auto;_width:expression(document.documentElement.clientWidth>960?"960px":"auto");overflow:hidden;}
+.header, .footer{text-align:center;}
+.header{border-width:0 0 1px 0;}
+.footer{border-width:1px 0 0 0;}
+h1{font:70px/116px "Microsoft Yahei","Sacramento";font-weight:bold;height:156px;text-indent:-9999px;background:url(../img/title.jpg) center no-repeat;padding-top:40px;}
+.col-a, .col-b{float:left;display:inline;}
+.col-a{width:70%;}
+.col-b{width:30%;}
+.comments{padding:20px 0;}
+
+
+//导航
+//-------------------------------
+$nav_item_width: 33.33%;
+.nav{
+	border-top:solid 1px nth($fontColor, 1);
+	border-bottom:solid 1px nth($fontColor, 1);
+	font-size:0;
+	width:80%;
+	margin:35px auto;
+	li{
+		display:inline-block;
+		line-height:28px;
+		vertical-align:middle;
+		font-size:14px;
+		width:$nav_item_width;
+		text-align:center;
+		*display:inline;
+		*zoom:1;
+	}
+	a{
+		color: nth($fontColor, 1);
+	}
+	a:hover, .current{
+		color: $a_hover;
+	}
+
+}
+
+
+
+
+//图文
+//---------------------
+.pt-item, .pt-list li{
+	&:after{
+		content:"\20";clear:both;height:0;display:block;overflow:hidden;
+	}
+	img{
+		float: left;
+	}
+	p{
+		overflow: hidden;
+		line-height: 24px;
+
+	}
+	zoom:1
+}
+
+
+//小盒子
+//----------------------
+.box-1{
+	padding:28px;
+	padding-top: 0;
+}
+.box-1-th{
+	line-height: 28px;
+	vertical-align:middle;
+	color: nth($fontColor, 2);
+	font-size: 14px;
+	border-bottom:solid 1px nth($fontColor, 1);
+}
+.box-1-bd{
+	padding:10px;
+}
+
+.box-2{
+	padding:10px 20px;
+	padding-top: 0;
+}
+
+.box-2-th{
+	line-height: 28px;
+	vertical-align:middle;
+	color: nth($fontColor, 3);
+	font-size: 14px;
+	
+}
+.box-2-bd{
+	padding:20px 10px;
+	border-bottom:solid 1px nth($fontColor, 3);
+}
