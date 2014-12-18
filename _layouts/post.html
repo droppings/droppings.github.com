@@ -29,6 +29,13 @@
         </div>
         {% include footer.html %}
     </div>
+    <script type="text/javascript" src="/js/prettify.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            // make code pretty
+            window.prettyPrint && prettyPrint();
+        }
+    </script>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'dropping'; // required: replace example with your forum shortname
