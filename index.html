@@ -3,8 +3,9 @@ layout: index
 title: Dropping's Blog
 ---
 <div class="col-a">
+	<!-- site.categories.test 分类 -->
 	<ul class="arts">
-		{% for post in site.categories.test %}
+		{% for post in site.posts %}
 			<li>
 				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 				<p class="time">{{ post.date | date_to_string }}</p>
