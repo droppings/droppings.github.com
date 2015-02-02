@@ -11,6 +11,7 @@ category: note
 
 ###利用css3的clip属性：
 
+
 ####1. 只有半圆的饼
 
     <style>
@@ -43,6 +44,7 @@ category: note
 	</div>
 </div>
 
+
     主要思想是，遮罩层只有右半圆，真正填充只有左半圆，所以当左半圆旋转到右半圆时，就可以看到了。但是，这样也只有半圆的填充噢，如果要填充整个圆的话，就要两个半圆，其实相当于复制两份，然后其中一份垂直翻转180度。
 
 
@@ -73,7 +75,7 @@ category: note
 	.fill-2-left{clip:rect(0 200px 200px 100px);}
 	.fill-2-right{clip:rect(0 100px 200px 0);}
 	.decorate{width:160px;height:160px;position:absolute;top:20px;left:20px;background:#fff;border-radius:50%;text-align:center;vertical-align:middle;line-height:160px;}
-	.decorate p{color:#4f90d2;}
+	.decorate p{color:#4f90d2;line-height:160px;}
 	.decorate input{width:50px;display:inline;}
 </style>
 <div class="circle-wrap">
@@ -104,6 +106,9 @@ category: note
 		}
 	}
 </script>
+
+
+
 
 ###canvas版：
 
