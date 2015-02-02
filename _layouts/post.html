@@ -33,6 +33,10 @@
     <script type="text/javascript">
         window.onload = function(){
             // make code pretty
+            var allPre = document.getElementsByTagName("pre"), i;
+            for(i = allPre.length ; i--; ){
+                allPre[i].className = "prettyprint";
+            } 
             window.prettyPrint && prettyPrint();
         }
     </script>
