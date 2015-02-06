@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <title>¹ùÃôÖ¥_¹ãÖİ</title>
-    <meta name="keywords" content="¹Ø¼ü´Ê" />
-    <meta name="description" content="×î¼ò½àµÄ×ÔÎÒÃèÊö»ò¸ĞÑÔ" />
+    <title>éƒ­æ•èŠ_å¹¿å·</title>
+    <meta name="keywords" content="å…³é”®è¯" />
+    <meta name="description" content="æœ€ç®€æ´çš„è‡ªæˆ‘æè¿°æˆ–æ„Ÿè¨€" />
     <meta name="author" content="guominzhi_gz none" />
     <meta content="telephone=no" name="format-detection"/>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -18,7 +18,7 @@
     			<div class="swipe-item swipe-item1">
                     <div class="swipe-item-con">
                         <p class="me"><img alt="me" src="img/me_001.jpg" class="animate2-hide"/></p>
-                        <p class="des">¼à²âµ½Ä¿Ç°µÄÉè±¸ÊÇ<span id="device"></span>¡£</p>
+                        <p class="des">ç›‘æµ‹åˆ°ç›®å‰çš„è®¾å¤‡æ˜¯<span id="device"></span>ã€‚</p>
                     </div>
                 </div>
     			<div class="swipe-item swipe-item2">
@@ -34,9 +34,9 @@
     			<div class="swipe-item swipe-item3">
                     <div class="container-3d">
                         <div class="swipe-item-con">
-                            <p class="des"> ------ ÅóÓÑÑÛÖĞµÄÎÒ ------ </p>
+                            <p class="des"> ------ æœ‹å‹çœ¼ä¸­çš„æˆ‘ ------ </p>
                             <canvas id="myCanvas" class="wall">
-                                sad£¬ÄãµÄä¯ÀÀÆ÷²»Ö§³ÖcanvasàŞ¡£
+                                sadï¼Œä½ çš„æµè§ˆå™¨ä¸æ”¯æŒcanvaså™¢ã€‚
                             </canvas>
                         </div> 
                     </div>
@@ -44,17 +44,17 @@
                 <div class="swipe-item swipe-item4">
                     <div class="swipe-item-con">
                         <h2>CONTACT</h2>
-                        <img width="150" height="150" alt="Í·Ïñ" src="img/me_004.jpg" />
-                        <p><span>email£º</span>guominzhi@pconline.com.cn</p>
-                        <p><span>phone£º</span>15876534072</p>
-                        <p><span>weixin£º</span>Dropping-</p>
+                        <img width="150" height="150" alt="å¤´åƒ" src="img/me_004.jpg" />
+                        <p><span>emailï¼š</span>guominzhi@pconline.com.cn</p>
+                        <p><span>phoneï¼š</span>15876534072</p>
+                        <p><span>weixinï¼š</span>Dropping-</p>
                     </div>
                 </div>
     		</div>
     		<div class="swipe-nav m-flex">
-    			 <span data-index="1">*£ş(¥¨)£ş</span>
+    			 <span data-index="1">*ï¿£(ã‚¨)ï¿£</span>
                  <span data-index="2">(oo)</span>
-                 <span data-index="3">= ¦Ø =</span>
+                 <span data-index="3">= Ï‰ =</span>
                  <span data-index="4">O__O"</span> 
     		</div>
     	</div>
@@ -65,7 +65,7 @@
     <script type="text/javascript" src="http://js.3conline.com/wap/common/swipe.extend-min.js"></script>
     <script type="text/javascript">
 
-        //ÎªÁËÄÇ¸ö¹¤¾ßÀ¸..
+        //ä¸ºäº†é‚£ä¸ªå·¥å…·æ ..
         document.querySelector(".g-doc").style.height = window.innerHeight +"px";
        
 
@@ -78,22 +78,23 @@
     	    nav: document.querySelector("#slider .swipe-nav"),
     	    vertical: true,
             callback: function(index, elem){
-                var elem_con;
+                var elem_con;console.log(index);
                 switch (index){
-                    case "0": 
+                    case 0: 
                         showBySteps(elem.querySelectorAll(".animate2-hide"),"animate2-show");
                         break;
-                    case "1": 
+                    case 1: 
+
                         showBySteps(elem.querySelectorAll(".animate1-hide"),"animate1-show");
                         break;
-                    case "2": 
+                    case 2: 
                         elem_con = elem.querySelector(".swipe-item-con");
                         elem_con.style.width = slider.offsetWidth + "px";
                         elem_con.style.height = slider.offsetHeight + "px";
                         addClass(elem_con, "swipe-item3-animation");
                         drawKeyWords(); 
                         break;
-                    case "3": 
+                    case 3: 
                         break;
                 }
             }
@@ -102,7 +103,7 @@
         function checkDevice(){
             var ua = navigator.userAgent.toLowerCase();
             if(ua.match(/MicroMessenger/i)=="micromessenger") {
-                return "Î¢ĞÅ";
+                return "å¾®ä¿¡";
             }else if (ua.indexOf('ipad') != -1) {
                 return "iPad";
             }else if (ua.indexOf('iphone') != -1) {
@@ -117,7 +118,7 @@
         }
         document.getElementById("device").innerHTML = checkDevice();
 
-        //·Å´óÍ¼Æ¬ 
+        //æ”¾å¤§å›¾ç‰‡ 
         var plst = document.querySelectorAll(".m-plst a"),
             mask = document.getElementById("mask");
         for(var i = plst.length;i--;){
@@ -163,12 +164,12 @@
             }
         }
 
-        //»­±êÇ©´Ê
+        //ç”»æ ‡ç­¾è¯
         function drawKeyWords(){
             var canvas = document.getElementById('myCanvas'),
                 ctx,
                 font_colors = ["#fe748d","#b8dbf7","#a8d63f","#f9e3e5","#efa96e","#d9cda3","#9ac3f7"],
-                keywords = ["Éµ","DµÍ","¶ÔÃæ´²µÄĞ¡Æ¨º¢","Ç°·½¸ßÄÜ..","ĞÔ±ğ²»Ã÷","°«·Ê","´óº°°ü","´À","¿ÉÄÍ","SHI","Æï³èĞ¡¹ê","Â·³Õ","Ğ¡Ñ§Éú","¶º±È","Ğ¡Á£","¼ÇµÃ³å³åË®~","´óÎ¸Íõ","SB","ÖÇÉÌÎª0","â«Ëö","Éñ¾­²¡","°¡¹ş¹ş¹ş"],
+                keywords = ["å‚»","Dä½","å¯¹é¢åºŠçš„å°å±å­©","å‰æ–¹é«˜èƒ½..","æ€§åˆ«ä¸æ˜","çŸ®è‚¥","å¤§å–ŠåŒ…","è ¢","å¯è€","SHI","éª‘å® å°é¾Ÿ","è·¯ç—´","å°å­¦ç”Ÿ","é€—æ¯”","å°ç²’","è®°å¾—å†²å†²æ°´~","å¤§èƒƒç‹","SB","æ™ºå•†ä¸º0","çŒ¥ç","ç¥ç»ç—…","å•Šå“ˆå“ˆå“ˆ"],
                 max_w = slider.offsetWidth,
                 max_h = slider.offsetHeight,
                 color_len = font_colors.length,
@@ -180,9 +181,9 @@
             for(var i = keywords.length;i--;){
                 (function(j){
                     setTimeout(function(){
-                        ctx.font =  Math.floor(Math.random()*12) + 12 + "px Microsoft Yahei"; // ×ÖÌå´óĞ¡Ëæ»ú
-                        ctx.fillStyle = font_colors[Math.floor(Math.random()*color_len)]; //ÑÕÉ«Ëæ»ú
-                        ctx.fillText(keywords[j],Math.floor(Math.random()*(max_w*0.7))+20,Math.floor(Math.random()*(max_h*0.75))+20);//×ø±êÒ²Ëæ»ú
+                        ctx.font =  Math.floor(Math.random()*12) + 12 + "px Microsoft Yahei"; // å­—ä½“å¤§å°éšæœº
+                        ctx.fillStyle = font_colors[Math.floor(Math.random()*color_len)]; //é¢œè‰²éšæœº
+                        ctx.fillText(keywords[j],Math.floor(Math.random()*(max_w*0.7))+20,Math.floor(Math.random()*(max_h*0.75))+20);//åæ ‡ä¹Ÿéšæœº
                     },300*i+1000);
                 })(i);
             }
@@ -192,13 +193,13 @@
     </script>
     <script type="text/javascript">
 
-        /*·ÖÏíµ½Î¢ĞÅ*/
+        /*åˆ†äº«åˆ°å¾®ä¿¡*/
         var dataForWeixin = {
             appId: "",
             imgUrl: "http://www1.pcbaby.com.cn/test/guominzhi/141111/img/me_002.jpg",
             url: window.location.href,
             title: document.title,
-            desc: "×î½ü¼ôÁË¸öĞÂ·¢ĞÍ£¬¾ÍÕâÑù¡£~",
+            desc: "æœ€è¿‘å‰ªäº†ä¸ªæ–°å‘å‹ï¼Œå°±è¿™æ ·ã€‚~",
             fakeid: "",
             callback:function () {
                 // body...
