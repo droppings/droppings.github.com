@@ -118,9 +118,9 @@ canvas画圆主要用arc方法
 
 
     参数	描述
-    x		圆的中心的 x 坐标。
-    y		圆的中心的 y 坐标。
-    r		圆的半径。
+    x	圆的中心的 x 坐标。
+    y	圆的中心的 y 坐标。
+    r	圆的半径。
     sAngle	起始角，以弧度计。（弧的圆形的三点钟位置是 0 度）。
     eAngle	结束角，以弧度计。
     counterclockwise	可选。规定应该逆时针还是顺时针绘图。False = 顺时针，true = 逆时针。
@@ -129,7 +129,46 @@ canvas画圆主要用arc方法
 很明显，跟高中学的三角函数同理，想画多少角度就多少，完全木有悬念。
 
 核心代码：
+    
+    ctx.beginPath();
+    ctx.moveTo(x,y); 
+    ctx.lineTo(x,r);  //画出12点钟的线，从圆心出发
+    ctx.arc(x,y,r,sAngle,eAngle);  //然后画一定角度的弧
+    ctx.lineWidth = lineWidth;
+    ctx.strokeStyle = "#11bbaa";
+    ctx.stroke();
+    ctx.closePath(); //最后闭合
+    ctx.fillStyle = "#11bbaa";
+    ctx.fill();  //填充
 
+
+<style type="text/css">
+	#myCanvas{width:200px;height:200px;}
+</style>
+<div class="circle-wrap">
+	<canvas id="myCanvas" width="200" height="200">
+		sorry, your browser can not support canvas.
+	</canvas>
+	输入：<input id="angel" >deg <a href="javascript:drawArc(100,100,90,-0.5*Math.PI,(document.getElementById('angel').value/180-0.5)*Math.PI, 1);">click</a>
+</div>
+<script>
+	var canvas = document.getElementById('myCanvas'), ctx;
+	if(canvas){
+		ctx = canvas.getContext("2d");
+	}
+	function drawArc (x,y,r,sAngle,eAngle,lineWidth) {
+		ctx.beginPath();
+		ctx.moveTo(x,y); 
+		ctx.lineTo(x,r); 
+		ctx.arc(x,y,r,sAngle,eAngle);
+		ctx.lineWidth = lineWidth;
+		ctx.strokeStyle = "#11bbaa";
+		ctx.stroke();
+		ctx.closePath();
+		ctx.fillStyle = "#11bbaa";
+		ctx.fill();
+	}
+</script>
 
 
 
