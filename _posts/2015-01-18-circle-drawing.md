@@ -144,6 +144,7 @@ canvas画圆主要用arc方法
 
 <style type="text/css">
 	#myCanvas{width:200px;height:200px;}
+	#angel{display:inline;}
 </style>
 <div class="circle-wrap">
 	<canvas id="myCanvas" width="200" height="200">
@@ -168,6 +169,7 @@ canvas画圆主要用arc方法
 		ctx.fillStyle = "#11bbaa";
 		ctx.fill();
 	}
+	drawArc(100,100,90,-0.5*Math.PI,(90/180-0.5)*Math.PI, 1);
 </script>
 
 
