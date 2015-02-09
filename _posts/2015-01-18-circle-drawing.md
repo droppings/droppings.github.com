@@ -144,9 +144,9 @@ canvas画圆主要用arc方法
 
 <style type="text/css">
 	#myCanvas{width:200px;height:200px;}
-	#angel{display:inline;}
+	.mb-15{margin-bottom:15px;}
 </style>
-<div class="circle-wrap">
+<div class="mb-15">
 	<canvas id="myCanvas" width="200" height="200">
 		sorry, your browser can not support canvas.
 	</canvas>
