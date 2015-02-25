@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>个人简历</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Dropping"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- 视差滚动：多层次的元素以不同速度在移动 -->
+	<h1>个人简历_郭敏芝</h1>
+	<div class="page page-1" id="page1">
+		load...
+	</div>
+	<div class="page page-2" id="page2">
+		<h2>个人简介</h2>
+		<div class="center-inner">
+			<img src="img/hero.png" alt="人物" id="intro_hero" width="156" height="179" class
+			="intro-dropping"/>
+			<dl class="tag tag-1 tag-parallel">
+				<dt>HP：</dt>
+				<dd>*****</dd>
+			</dl>
+			<dl class="tag tag-2 tag-parallel">
+				<dt>性别：</dt>
+				<dd>♀</dd>
+			</dl>
+			<dl class="tag tag-3">
+				<dt>谋生技能：</dt>
+				<dd>HTML、CSS、JavaScript</dd>
+			</dl>
+			<dl class="tag tag-4">
+				<dt>工作年龄：</dt>
+				<dd>2年(2013.01-today)</dd>
+			</dl>
+			<dl class="tag tag-5">
+				<dt>角色：</dt>
+				<dd>前端开发攻城师</dd>
+			</dl>
+			<a href="javascript:scrollStart();" class="direction direction-1">START</a>
+		</div>	
+			
+	</div>
+	<img src="img/hero.png" alt="人物" id="animate_hero" class="animate-dropping"/>
+	<div class="screen screen-back" id="screen_back" style="left:0;"></div>
+	<div class="screen screen-center" id="screen_center"></div>
+	<div class="screen screen-people">
+		<img src="img/hero.png" alt="人物" class="dropping" id="walking_hero"/> 
+	</div>
+	<div class="screen screen-front" id="screen_front">
+		<img src="img/mouse.png" alt="滚动鼠标查看页面" class="direction direction-2" id="tip_001"/>
+		<div class="part part-1" id="experience_part">
+			<h2>工作经历</h2>
+			<a href="#" class="monster monster-1" data-left="800" data-ko="0"><img src="img/monster_001.png" alt="太平洋网络"></a>
+			<div class="experience" data-left="900">
+				<h3>经验值 +1200</h3>
+				<dl class="clearfix">
+					<dt>公司名称：</dt><dd>太平洋网络有限公司</dd>
+					<dt>工作时间：</dt><dd>2013.07.31-至今</dd>
+					<dt>工作职位：</dt><dd>前端开发工程师</dd>
+      				<dt>主要工作：</dt><dd>使用CMS系统制作模板，完成日常网页制作、发布与维护；配合各阶段活动进行相关的专题页面（移动端页面）制作和维护研究前端技术，结合公司情况，优化网页；与后台开发配合，接口协调，调试页面，完成项目开发等</dd>
+				</dl>
+			</div>
+			<a href="#" class="monster monster-2" data-left="1800" data-ko="0"><img src="img/monster_002.png" alt="惠众天下"></a>
+			<div class="experience" data-left="1900">
+				<h3>经验值 +800</h3>
+				<dl class="clearfix">
+					<dt>公司名称：</dt><dd>广州惠众天下电子商务有限公司</dd>
+					<dt>工作时间：</dt><dd>2013.01.03-2013.07.20</dd>
+					<dt>工作职位：</dt><dd>前端开发工程师（实习生）</dd>
+      				<dt>主要工作：</dt><dd>负责公司网站(www.guibin.com)以及公司各后台系统的实现与维护；用jquery实现各控件，参与开发基于jquery的插件，与设计人员紧密配合实现高保真页面的搭建及其交互效果；与后台人员合作，确认调用接口，保证业务功能的实现；与团队定期的前端技术交流（如响应式设计、sencha touch开发、QuoJS多点触控等移动端互联网的学习）</dd>
+				</dl>
+			</div>
+			<a href="#" class="monster monster-3" data-left="2600"><img src="img/mushroom-2.png" alt="成品"></a>
+		</div> 
+		<div class="part part-2">
+			<h2>项目经验/成品</h2>
+			<div class="part-2-inner">
+				<ul class="pic-list">
+					<li class="item-1">
+						<div class="dialog">
+							<h3>移动端活动专题页面</h3>
+							<p><a href="http://www1.pchouse.com.cn/wap/zt/gz141031/11tbch/index.html" target="_blank">家居网特别策划</a>、<a href="http://www1.pconline.com.cn/zt/wap/gz20141211/mx4pro/" target="_blank">魅族发布</a>、五一刮刮乐签到抽奖、圣诞节特别策划、亲子宝典APP端午节活动...</p>
+						</div>
+					</li>
+					<li class="item-2">
+						<div class="dialog">
+							<h3><a href="http://product.pcbaby.com.cn/zx/pc/2013/" target="_blank">2013年太平洋评测盛典</a></h3>
+							<p>负责前端页面的制作；与后台协调配合实现整个项目</p>
+						</div>
+					</li>
+					<li class="item-3">
+						<div class="dialog">
+							<h3><a href="http://guibin.com/" target="_blank">贵宾网</a>维护以及后台系统</h3>
+							<p>网格布局，组件模块化，与后台协调实现整个系统的各个功能</p>
+						</div>
+					</li>
+					<li class="item-4">
+						<div class="dialog">
+							<h3>亲子网二胎频道、亲子网与青海卫视合作活动等</h3>
+							<p>配合需求制作通用模版，录入CMS系统，发布线上页面</p>
+						</div>
+					</li>
+					<li class="item-5">
+						<div class="dialog">
+							<h3>个人其他作品</h3>
+							<p>帮朋友搭建的一个小网站：<a href="http://www.pamviles.com/" target="_blank">http://www.pamviles.com/</a></p>
+						</div>
+					</li>
+					<li class="item-6">
+						<div class="dialog">
+							<h3>植物大战僵尸Android版游戏 <a href="http://115.com/file/e72q8h6e#Plant5.0.apk--BY" target="_blank">apk</a></h3>
+							<p>我的角色是PM(project manager)。分配任务、跟进项目进度、设计整个游戏的框架、实现游戏的保存功能</p>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div> 
+		<div class="part part-3">
+			<div class="center-inner">
+				<h2>阅读经历</h2>
+				<p>《超越CSS：Web设计艺术精髓(修订版)》</p>
+				<p>《jQuery开发技术详解》</p>
+				<p>《CSS实战手册（第2版）》</p>
+				<p>《编写高质量代码------Web前端开发修炼之道》</p>
+				<p>《HTML 5与CSS 3权威指南》</p>
+				<p>《javaScript语言精髓与编程实践》</p>
+				<p>《简约至上：交互式设计四策略》 </p>
+				<p>《精通CSS：高级Web标准解决方案》 </p>
+				<p>《编写可维护的javascript》...  </p>
+				<h2>奖品</h2>
+				<p>软件中级设计师、2011校ACM程序设计大赛专业组二等奖、校“三好学生”及二等奖学金、第六届院运会女子100米栏第七名 </p>
+			</div>
+		</div>
+		<div class="part part-4">
+			<div class="center-inner">
+				<h2>联系方式</h2>
+				<p><span class="icon icon-1"></span>手机：15876534072</p>
+				<p><span class="icon icon-2"></span>邮箱：15876534072@163.com</p>
+				<p><span class="icon icon-3"></span>微信号：Dropping-</p>
+				<p class="pd-20"><img src="img/code.png" alt="二维码" width="150"></p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		var screenBack = document.getElementById('screen_back'),
+		    screenCenter = document.getElementById('screen_center'),
+		    screenFront = document.getElementById('screen_front'),
+		    body = document.documentElement || document.body,
+		    monsterArr = getByClass(document.getElementById("experience_part").getElementsByTagName("a"),"monster"),
+		    monsterArrLeft = [];
+		    experienceArr = getByClass(document.getElementById("experience_part").getElementsByTagName("div"),"experience"),
+			tip1 = document.getElementById("tip_001"),
+			partArr = getByClass(screenFront.getElementsByTagName("div"),"part"),
+			end = 0;
+		
+		 
+		function onMouseWheel(e){
+		    var e = e || window.event;
+
+			//wheelDelta的正负来判断鼠标是向上滚动还是向下滚动，普通浏览器向下滚一次是-120，FF的detail是3
+			var delta = (e.wheelDelta) ? e.wheelDelta / 120 : -(e.detail || 0) / 3;
+			var sbLeft = screenFront.style.left.replace("px","") * 1;
+
+			tip1.style.opacity = "0";
+			tip1.style.visibility = "hidden";
+
+			if(sbLeft > 0 || (sbLeft == 0 && delta > 0)){
+
+				screenBack.style.left = '0';
+				screenCenter.style.left = '0';
+				screenFront.style.left = '0';
+
+			}else{
+
+				switch(sbLeft){
+					case -monsterArrLeft[0]: 
+						experienceArr[0].style.display = "block";
+						monsterDown(monsterArr[0]);
+						break;
+					case -monsterArrLeft[1]: 
+						experienceArr[1].style.display = "block";
+						monsterDown(monsterArr[1]);
+						break;
+					case -monsterArrLeft[2]: 
+						partArr[1].style.top = "0";
+						break;
+				}
+				if(sbLeft <= -end && delta < 0){
+					return;
+				}else{
+					screenBack.style.left = screenBack.style.left.replace("px","") * 1 + delta * 10 + 'px';
+					screenCenter.style.left = screenCenter.style.left.replace("px","") * 1 + delta * 20 + 'px';
+					screenFront.style.left = screenFront.style.left.replace("px","") * 1 + delta * 50 + 'px';
+				}
+				
+			}
+		}
+		 
+		function addEvent(ele, type, handler){
+			if(ele.addEventListener){
+				if (type === "mousewheel" && document.mozHidden !== undefined) {
+                    type = "DOMMouseScroll";//兼容FF, 只有FireFox浏览器一个人使用DOMMouseScroll
+                }
+				ele.addEventListener(type, handler, false);
+			}else if(ele.attachEvent){
+				ele.attachEvent("on" + type, handler);
+			}else{
+				ele["on" + type] = handler;
+			}
+		}
+
+		function init(){
+			
+			for(var i = 1, len = partArr.length; i < len; i++){
+				partArr[i].style.left = i + 1 + "00%";
+			}
+
+			//monster_part
+			for(var i = 0, len = monsterArr.length; i < len; i++){
+				monsterArrLeft.push(monsterArr[i].getAttribute("data-left")*1 - 100);
+				monsterArr[i].style.left = monsterArr[i].getAttribute("data-left") + "px";
+			}
+
+			//experience_part
+			for(var i = 0, len = experienceArr.length; i < len; i++){
+				experienceArr[i].style.left = experienceArr[i].getAttribute("data-left") + "px";
+			}
+		}
+
+		function getByClass(arr, cls){
+			var newArr = new Array();
+			for(var i = 0, len = arr.length; i < len; i++){
+				if(hasClass(arr[i], cls)){
+					newArr.push(arr[i]);
+				}
+			}
+			return newArr;
+		}
+
+		function addClass(obj, cls) {
+            if (!this.hasClass(obj, cls)){
+               obj.className += " " + cls; 
+            } 
+        }
+
+        function hasClass(obj, cls){
+            var obj_class = obj.className,
+                obj_class_lst = obj_class.split(/\s+/),
+                x = 0;
+            for(x in obj_class_lst) {
+                if(obj_class_lst[x] == cls) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function removeClass(obj, cls) {
+           if (hasClass(obj, cls)) {
+               var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+               obj.className = obj.className.replace(reg, ' ');
+           }
+        }
+
+
+		function scrollStart(){
+
+			var animate_hero = document.getElementById("animate_hero"),
+				intro_hero = document.getElementById("intro_hero"),
+			    walking_hero = document.getElementById("walking_hero"),
+			    page2 = document.getElementById("page2");
+
+			//animate_hero.style.display = "block";
+			//animate_hero.style.top = intro_hero.getBoundingClientRect().top + "px";
+			//animate_hero.style.left = intro_hero.getBoundingClientRect().left + "px";
+			animate_hero.style.cssText = "display:block;top:" + intro_hero.getBoundingClientRect().top + "px;left:" + intro_hero.getBoundingClientRect().left + "px";
+			intro_hero.style.visibility = "hidden";
+
+			//判断是否支持transition
+			if ( "transition" in animate_hero.style || "-webkit-transition" in animate_hero.style || "-o-transition" in animate_hero.style || "-moz-transition" in animate_hero.style || "-ms-transition" in animate_hero.style) {
+
+				//walking_hero.style.opacity = "0";
+
+				setTimeout(function(){
+					//animate_hero.style.top = "5%";
+					//animate_hero.style.left = "30%";
+					animate_hero.style.cssText = "display:block;top:5%;left:30%;";
+				}, 100);
+
+				setTimeout(function(){
+					page2.style.top = "-100%";
+					//animate_hero.style.top = walking_hero.getBoundingClientRect().top + "px";
+					//animate_hero.style.left = walking_hero.getBoundingClientRect().left + "px";
+					animate_hero.style.cssText = "display:block;top:" + walking_hero.getBoundingClientRect().top + "px;left:" + walking_hero.getBoundingClientRect().left + "px";					
+				}, 1100);
+
+				setTimeout(function(){
+					walking_hero.style.opacity = "1";
+					walking_hero.style.visibility = "visible";
+					tip1.style.opacity = "1";
+					addClass(tip1, "bling-animate");
+					animate_hero.style.display = "none";
+					//用scroll的话，chrome会跳动（因为浏览器的本身优化机制），所以改用mousewheel解决
+					addEvent(body,'mousewheel',onMouseWheel);
+				}, 2100);
+			}else{
+				page2.style.top = "-100%";
+				walking_hero.style.visibility = "visible";
+				animate_hero.style.cssText = "display:block;top:" + walking_hero.getBoundingClientRect().top + "px;left:" + walking_hero.getBoundingClientRect().left + "px";
+				//animate_hero.style.top = walking_hero.getBoundingClientRect().top + "px";
+				//animate_hero.style.left = walking_hero.getBoundingClientRect().left + "px";
+				addEvent(body,'mousewheel',onMouseWheel);
+			}
+
+			end = partArr[partArr.length-1].getBoundingClientRect().left;
+
+		}
+
+		function monsterDown(mon){
+            if(mon.getAttribute("data-ko") == "0"){
+            	mon.style.bottom = 50 + "px";
+            	setTimeout(function(){
+            		mon.style.bottom = 20 + "px";
+            		mon.style.left = mon.style.left.replace("px","") * 1 + 350 + "px";
+            		addClass(mon,"monster-animate");
+            		mon.setAttribute("data-ko", "1");
+            	},100);
+            }else{
+            	return;
+            }
+        }
+
+		init();
+
+	</script>
+</body>
+</html>

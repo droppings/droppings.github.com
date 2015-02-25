@@ -9,10 +9,10 @@ category: note
 
 
 
-###利用css3的clip属性：
+###1. 利用css3的clip属性：
 
 
-####1. 只有半圆的饼
+####1) 只有半圆的饼
 
     <style>
 	    .circle{position:absolute;top:0;left:0;width:200px;height:200px;border-radius:50%;background:#f1f1f1;}
@@ -48,7 +48,7 @@ category: note
 主要思想是，遮罩层只有右半圆，真正填充的只有左半圆，所以当左半圆旋转到右半圆时，就可以看到了。但是，这样也只有半圆的填充噢，如果要填充整个圆的话，就要两个半圆，其实相当于复制两份，然后其中一份垂直翻转180度。
 
 
-####2. 完整的饼
+####2) 完整的饼
 
     <style>
 	    .circle{position:absolute;top:0;left:0;width:200px;height:200px;border-radius:50%;background:#f1f1f1;}
@@ -110,7 +110,7 @@ category: note
 (输入数值然后失去焦点，便可看到效果。)
 
 
-###canvas版(arc画弧)：
+###2. canvas版(arc画弧)：
 
 canvas画圆主要用arc方法
 
@@ -174,7 +174,7 @@ canvas画圆主要用arc方法
 
 
 
-###svg版：
+###3. svg版：
 
 SVG 意为可缩放矢量图形（Scalable Vector Graphics），而且让人惊喜的是老古董IE6居然也兼容它，哇哦不得了了。
 
@@ -196,12 +196,11 @@ SVG 意为可缩放矢量图形（Scalable Vector Graphics），而且让人惊�
 
 
 
-这次画圆饼，主要应用到A来画弧形（椭圆or圆形）。弧形命令A是另一个创建SVG曲线的命令。
-
+这次画圆饼，主要应用到A来画弧形（椭圆or圆形）。弧形命令A是另一个创建SVG曲线的命令:
 
     A rx ry x-axis-rotation large-arc-flag sweep-flag x y
 
-rx和ry分别代表x轴半径和y轴半径，这里是圆形所以二者相等，值为半径大小。燃后，x-axis-rotation表示x轴旋转角度，这里就不用旋转，所以设为0。特别注意的是，large-arc-flag（角度大小） 和sweep-flag（弧线方向）这两个参数。large-arc-flag决定弧线是大于还是小于180度，0表示小角度弧，1表示大角度弧。sweep-flag表示弧线的方向，0表示从起点到终点沿逆时针画弧，1表示从起点到终点沿顺时针画弧。
+其中，rx和ry分别代表x轴半径和y轴半径，这里是圆形所以二者相等，值为半径大小。燃后，x-axis-rotation表示x轴旋转角度，这里就不用旋转，所以设为0。特别注意的是，large-arc-flag（角度大小） 和sweep-flag（弧线方向）这两个参数。large-arc-flag决定弧线是大于还是小于180度，0表示小角度弧，1表示大角度弧。sweep-flag表示弧线的方向，0表示从起点到终点沿逆时针画弧，1表示从起点到终点沿顺时针画弧。
 
 具体下面有个图片说明，看！
 
@@ -311,6 +310,11 @@ rx和ry分别代表x轴半径和y轴半径，这里是圆形所以二者相等�
 		path += "Z"; 
 		stage.innerHTML = '<path d="' + path + '" style="fill:#4f90d2;" id="cake"></path>';
 	}
+
+
+###总结
+
+....
 
 </script>
 
