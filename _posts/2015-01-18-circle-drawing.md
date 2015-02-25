@@ -205,7 +205,7 @@ rx和ry分别代表x轴半径和y轴半径，这里是圆形所以二者相等�
 
 具体下面有个图片说明，看！
 
-<img src="../img/demo/SVGArcs_Flags.png" alt="SVGArcs_Flags">
+<img src="/img/demo/SVGArcs_Flags.png" alt="SVGArcs_Flags">
 
     <?xml version="1.0" standalone="no"?>
     <svg width="325px" height="325px" version="1.1" xmlns="http://www.w3.org/2000/svg">
