@@ -311,13 +311,15 @@ SVG 意为可缩放矢量图形（Scalable Vector Graphics），而且让人惊�
 		stage.innerHTML = '<path d="' + path + '" style="fill:#4f90d2;" id="cake"></path>';
 	}
 
+</script>
 
 ###总结
 
-....
+第一种方法是最简单的，不用计算，可惜clip有兼容性的问题（目前chrome1.0+、firefox1.0+、opera7.0+、safari1.0+和ie8.0+支持），若是移动端页面就可以妥妥的使用了。
 
-</script>
+第二种方法涉及数学的计算问题，但是实现与理解起来也不难，canvas的兼容性方面也是ie8+的（移动端毫无压力）。
 
+第三种咧，兼容性是最好的，数学公式相对复杂了些，但是花一点时间计算一下，综合起来还是可取的。
 
 
 
