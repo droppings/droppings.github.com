@@ -28,3 +28,20 @@
 
 .pt-list li{padding:5px;}
 .pt-list img{margin-right: 5px;}
+
+//适应移动端
+@media only screen and (max-width:768px){
+	.arts{
+		li{
+			.read-more{
+				display:block;
+				position:relative;
+				margin-top: 10px;
+				bottom:0;
+				right:0;
+				text-align: center;
+			}
+		}
+	}
+
+}

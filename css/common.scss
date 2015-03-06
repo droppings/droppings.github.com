@@ -67,7 +67,6 @@ $nav_item_width: 33.33%;
 	p{
 		overflow: hidden;
 		line-height: 24px;
-
 	}
 	zoom:1
 }
@@ -105,4 +104,19 @@ $nav_item_width: 33.33%;
 .box-2-bd{
 	padding:20px 10px;
 	border-bottom:solid 1px nth($fontColor, 3);
+}
+
+
+//适应移动端
+@media only screen and (max-width:768px){
+	.pt-item{
+		a{
+			display:block;text-align:center;
+		}
+		img{
+			float:none;max-width:100%;height:auto;
+		}
+	}
+	.col-a{width:100%;}
+	.col-b{display:none;}
 }
