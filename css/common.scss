@@ -109,6 +109,9 @@ $nav_item_width: 33.33%;
 
 //适应移动端
 @media only screen and (max-width:768px){
+	h1{
+		background-size:100% auto;
+	}
 	.pt-item{
 		a{
 			display:block;text-align:center;
